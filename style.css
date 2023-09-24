@@ -1,0 +1,52 @@
+*{
+    user-select: none;
+}
+.advise{
+    display: none;
+}
+body{
+    background-color: #E6E6E6;
+}
+.searchbox{
+    width: 500px;
+    height: 200px;
+    background: rgba(133, 133, 133, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(133, 133, 133, 0.3);
+    border-radius: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display: none;
+    transition: all 0.5s;
+}
+.search{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px #000;
+    outline: none;
+}
+
+@media screen and (max-width: 800px) {
+    .advise{
+        width: 90%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    p{
+        display: none;
+    }
+  }
