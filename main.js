@@ -7,7 +7,7 @@ document.addEventListener('mousemove', function(e){
 });
 
 document .addEventListener("keydown", (event) => {
-    if ((event. ctrlKey || event. metaKey) && event. key === "q") {
+    if ((event. ctrlKey || event. metaKey) && event. key === "e") {
         document.getElementById("search").value = "https://";
         document.getElementById("search").style.display = "block";
         document.getElementById("searchbox").style.opacity = "1";
